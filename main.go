@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/PranavMasekar/Fibre-CRM/database"
-	"github.com/PranavMasekar/Fibre-CRM/lead"
+	"github.com/PranavMasekar/go-fiber/database"
+	"github.com/PranavMasekar/go-fiber/lead"
 	"github.com/gofiber/fiber"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"

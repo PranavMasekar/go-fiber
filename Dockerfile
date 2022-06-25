@@ -1,17 +1,17 @@
 FROM golang:1.16-alpine
 
-WORKDIR /app 
+RUN apk add build-base
 
-COPY go.mod ./
-COPY go.sum ./
+RUN mkdir /app
+
+ADD . /app
+
+WORKDIR /app
 
 RUN go mod download
-RUN go mod tidy
 
-COPY *.go ./
-
-RUN go build -o go-fiber .
+RUN go build -o go-fiber-crm .
 
 EXPOSE 3000
 
-CMD [ "/app/go-fiber" ]
+CMD ["/app/go-fiber-crm"]

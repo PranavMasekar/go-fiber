@@ -1,4 +1,4 @@
-module github.com/PranavMasekar/Fibre-CRM
+module github.com/PranavMasekar/go-fiber
 
 go 1.13
 
